@@ -8,6 +8,8 @@ import Favourite from './tabs/Favourite';
 import {tabIcons} from '../helpers/Icons';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
+import { HomeKcod } from '../containers';
+
 const {Navigator, Screen} = createBottomTabNavigator();
 
 const Tabs = () => {
@@ -38,7 +40,8 @@ const Tabs = () => {
       }}>
       <Screen name={Home.name} component={Home.component} />
       <Screen name={Cart.name} component={Cart.component} />
-      <Screen name={Explore.name} component={Explore.component} />
+      {/* <Screen name={Explore.name} component={Explore.component} /> */}
+      <Screen name={'HomeKcod'} component={HomeKcod} />
       <Screen name={Favourite.name} component={Favourite.component} />
       <Screen name={Account.name} component={Account.component} />
     </Navigator>
